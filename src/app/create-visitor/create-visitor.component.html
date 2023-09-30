@@ -1,0 +1,45 @@
+<div class="col-md-5 offset-md-3">
+
+<h3> Add Visitor </h3>
+
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <label>Visitor Name</label>
+        <input type="text" class="form-control" id="visitorName"
+            [(ngModel)] = "visitor.visitorName" name="visitorName">
+    </div>
+    <div class="form-group">
+        <label>Visitor Address</label>
+        <input type="text" class="form-control" id="visitorAddress"
+            [(ngModel)] = "visitor.visitorAddress" name="visitorAddress">
+    </div>
+    <div class="form-group">
+        <label>Visitor Entry Time</label>
+        <input type="text" class="form-control" id="visitorEntryTime"
+            [(ngModel)] = "visitor.visitorEntryTime" name="visitorEntryTime">
+    </div>
+    <div class="form-group">
+        <label>Visitor Outing Time</label>
+        <input type="text" class="form-control" id="visitorOutingTime"
+            [(ngModel)] = "visitor.visitorOutingTime" name="visitorOutingTime">
+    </div>
+    <div class="form-group">
+        <label>Contractors</label>
+        <input type="text" class="form-control" id="contractors"
+            [(ngModel)] = "visitor.contractors" name="contractors">
+    </div>
+    <div class="form-group">
+        <label>Purpose</label>
+        <input type="text" class="form-control" id="vistingPurpose"
+            [(ngModel)] = "visitor.vistingPurpose" name="vistingPurpose">
+    </div>
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="text" class="form-control" id="phone"
+            [(ngModel)] = "visitor.phone" name="phone">
+    </div>
+
+    <button class="btn btn-success" type="submit"> Submit </button>
+    
+</form>
+</div>
